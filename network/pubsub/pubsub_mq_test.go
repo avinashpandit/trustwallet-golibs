@@ -10,12 +10,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/avinashpandit/trustwallet-golibs/network/pubsub"
+	"github.com/avinashpandit/trustwallet-golibs/network/pubsub/mqclient"
 	"github.com/ory/dockertest"
 	log "github.com/sirupsen/logrus"
 	"github.com/streadway/amqp"
 	"github.com/stretchr/testify/assert"
-	"github.com/trustwallet/golibs/network/pubsub"
-	"github.com/trustwallet/golibs/network/pubsub/mqclient"
 )
 
 var (

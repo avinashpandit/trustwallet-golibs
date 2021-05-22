@@ -7,9 +7,9 @@ import (
 	"sort"
 	"testing"
 
+	"github.com/avinashpandit/trustwallet-golibs/coin"
+	"github.com/avinashpandit/trustwallet-golibs/mock"
 	"github.com/stretchr/testify/assert"
-	"github.com/trustwallet/golibs/coin"
-	"github.com/trustwallet/golibs/mock"
 )
 
 var (

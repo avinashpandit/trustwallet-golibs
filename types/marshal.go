@@ -7,7 +7,7 @@ import (
 
 	"errors"
 
-	"github.com/trustwallet/golibs/numbers"
+	"github.com/avinashpandit/trustwallet-golibs/numbers"
 )
 
 var matchNumber = regexp.MustCompile(`^\d+(\.\d+)?$`)

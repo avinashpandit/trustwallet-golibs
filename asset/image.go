@@ -3,7 +3,7 @@ package asset
 import (
 	"fmt"
 
-	"github.com/trustwallet/golibs/coin"
+	"github.com/avinashpandit/trustwallet-golibs/coin"
 )
 
 func GetImageURL(endpoint, asset string) string {

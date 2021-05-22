@@ -3,8 +3,8 @@ package address
 import (
 	"testing"
 
+	"github.com/avinashpandit/trustwallet-golibs/coin"
 	"github.com/stretchr/testify/assert"
-	"github.com/trustwallet/golibs/coin"
 )
 
 func TestEIP55Checksum(t *testing.T) {

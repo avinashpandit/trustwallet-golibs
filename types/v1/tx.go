@@ -5,8 +5,8 @@ import (
 	"sort"
 	"strconv"
 
+	"github.com/avinashpandit/trustwallet-golibs/asset"
 	mapset "github.com/deckarep/golang-set"
-	"github.com/trustwallet/golibs/asset"
 )
 
 const (

@@ -6,8 +6,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	"github.com/avinashpandit/trustwallet-golibs/client"
 	"github.com/stretchr/testify/assert"
-	"github.com/trustwallet/golibs/client"
 )
 
 type response struct {

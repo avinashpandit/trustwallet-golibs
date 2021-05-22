@@ -5,10 +5,10 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/avinashpandit/trustwallet-golibs/asset"
+	"github.com/avinashpandit/trustwallet-golibs/coin"
+	"github.com/avinashpandit/trustwallet-golibs/numbers"
 	mapset "github.com/deckarep/golang-set"
-	"github.com/trustwallet/golibs/asset"
-	"github.com/trustwallet/golibs/coin"
-	"github.com/trustwallet/golibs/numbers"
 )
 
 const (

@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/avinashpandit/trustwallet-golibs/network/pubsub"
 	"github.com/pkg/errors"
 	"github.com/streadway/amqp"
-	"github.com/trustwallet/golibs/network/pubsub"
 	"go.uber.org/atomic"
 )
 

@@ -6,10 +6,10 @@ import (
 	"sort"
 	"testing"
 
+	"github.com/avinashpandit/trustwallet-golibs/coin"
+	"github.com/avinashpandit/trustwallet-golibs/mock"
 	mapset "github.com/deckarep/golang-set"
 	"github.com/stretchr/testify/assert"
-	"github.com/trustwallet/golibs/coin"
-	"github.com/trustwallet/golibs/mock"
 )
 
 var (

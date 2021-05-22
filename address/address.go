@@ -3,7 +3,7 @@ package address
 import (
 	"strings"
 
-	"github.com/trustwallet/golibs/coin"
+	"github.com/avinashpandit/trustwallet-golibs/coin"
 	"golang.org/x/crypto/sha3"
 )
 
