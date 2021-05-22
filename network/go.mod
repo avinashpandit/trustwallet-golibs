@@ -1,4 +1,4 @@
-module github.com/trustwallet/golibs/network
+module github.com/avinashpandit/trustwallet-golibs/network
 
 go 1.15
 
