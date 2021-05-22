@@ -494,3 +494,11 @@
   name: THORChain
   decimals: 18
   sampleAddress: 'bnb1czhptncu9uhhlrlrk9q0rmy459gae2ua79mapn'
+
+- id: 1281
+  symbol: MNT
+  handle: mint
+  name: Mint
+  decimals: 18
+  sampleAddress: '0x720E1fa107A1Df39Db4E78A3633121ac36Bec132'
+  blockTime: 1000
