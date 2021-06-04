@@ -33,6 +33,8 @@ func GetEthereumTokenTypeByIndex(coinIndex uint) TokenType {
 	switch coinIndex {
 	case coin.Ethereum().ID:
 		tokenType = ERC20
+	case coin.Mint().ID:
+		tokenType = ERC20
 	case coin.Classic().ID:
 		tokenType = ETC20
 	case coin.Poa().ID:
