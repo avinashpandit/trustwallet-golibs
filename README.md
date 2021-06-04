@@ -8,6 +8,6 @@ These are common libs published which are used by mostly BlockAtlas. Following c
 
 How to publish
 
--- First commit changes 
--- Create git tag -- git tag v1.0.5 
--- Pulish tag -- git push origin v1.0.5
+- First commit changes 
+- Create git tag -- git tag v1.0.5 
+- Pulish tag -- git push origin v1.0.5
