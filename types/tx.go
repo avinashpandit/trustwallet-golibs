@@ -149,6 +149,17 @@ type (
 		To       string `json:"to"`
 	}
 
+	TokenApproval struct {
+		AssetID  string `json:"asset_id,omitempty"`
+		Name     string `json:"name"`
+		Symbol   string `json:"symbol"`
+		TokenID  string `json:"token_id"`
+		Decimals uint   `json:"decimals"`
+		Value    Amount `json:"value"`
+		From     string `json:"from"`
+		To       string `json:"to"`
+	}
+
 	// Delegation describes the blocking of a stacked currency
 	Delegation struct {
 		Value    Amount `json:"value"`
