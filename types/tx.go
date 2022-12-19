@@ -23,6 +23,7 @@ const (
 	TxTransfer              TransactionType = "transfer"
 	TxNativeTokenTransfer   TransactionType = "native_token_transfer"
 	TxTokenTransfer         TransactionType = "token_transfer"
+	TxTokenApproval         TransactionType = "token_approval"
 	TxCollectibleTransfer   TransactionType = "collectible_transfer"
 	TxTokenSwap             TransactionType = "token_swap"
 	TxContractCall          TransactionType = "contract_call"
