@@ -24,6 +24,8 @@ const (
 	TxNativeTokenTransfer   TransactionType = "native_token_transfer"
 	TxTokenTransfer         TransactionType = "token_transfer"
 	TxTokenApproval         TransactionType = "token_approval"
+	TxBridgeDeposit         TransactionType = "bridge_deposit"
+	TxBridgeWithdrawal      TransactionType = "bridge_withdrawal"
 	TxCollectibleTransfer   TransactionType = "collectible_transfer"
 	TxTokenSwap             TransactionType = "token_swap"
 	TxContractCall          TransactionType = "contract_call"
@@ -150,6 +152,28 @@ type (
 	}
 
 	TokenApproval struct {
+		AssetID  string `json:"asset_id,omitempty"`
+		Name     string `json:"name"`
+		Symbol   string `json:"symbol"`
+		TokenID  string `json:"token_id"`
+		Decimals uint   `json:"decimals"`
+		Value    Amount `json:"value"`
+		From     string `json:"from"`
+		To       string `json:"to"`
+	}
+
+	BridgeDeposit struct {
+		AssetID  string `json:"asset_id,omitempty"`
+		Name     string `json:"name"`
+		Symbol   string `json:"symbol"`
+		TokenID  string `json:"token_id"`
+		Decimals uint   `json:"decimals"`
+		Value    Amount `json:"value"`
+		From     string `json:"from"`
+		To       string `json:"to"`
+	}
+
+	BridgeWithdrawal struct {
 		AssetID  string `json:"asset_id,omitempty"`
 		Name     string `json:"name"`
 		Symbol   string `json:"symbol"`
