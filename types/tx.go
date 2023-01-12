@@ -28,6 +28,7 @@ const (
 	TxBridgeWithdrawal      TransactionType = "bridge_withdrawal"
 	TxCollectibleTransfer   TransactionType = "collectible_transfer"
 	TxTokenSwap             TransactionType = "token_swap"
+	TxMintSwap              TransactionType = "mint_swap"
 	TxContractCall          TransactionType = "contract_call"
 	TxAnyAction             TransactionType = "any_action"
 	TxMultiCurrencyTransfer TransactionType = "multi_currency_transfer"
@@ -62,8 +63,9 @@ type (
 	KeyTitle        string
 
 	Block struct {
-		Number int64 `json:"number"`
-		Txs    []Tx  `json:"txs"`
+		Number    int64  `json:"number"`
+		Timestamp string `json:"timestamp"`
+		Txs       []Tx   `json:"txs"`
 	}
 
 	TxPage struct {
@@ -182,6 +184,15 @@ type (
 		Value    Amount `json:"value"`
 		From     string `json:"from"`
 		To       string `json:"to"`
+	}
+
+	MintSwap struct {
+		FromCurrency string `json:"from_currency"`
+		ToCurrency   string `json:"to_currency"`
+		FromAmount   string `json:"from_amount"`
+		ToAmount     string `json:"to_amount"`
+		SwapNonce    uint   `json:"swap_nonce"`
+		SwapRate     string `json:"swap_rate"`
 	}
 
 	// Delegation describes the blocking of a stacked currency

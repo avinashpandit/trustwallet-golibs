@@ -44,6 +44,8 @@ func (t *Tx) UnmarshalJSON(data []byte) error {
 		t.Meta = new(BridgeDeposit)
 	case TxBridgeWithdrawal:
 		t.Meta = new(BridgeWithdrawal)
+	case TxMintSwap:
+		t.Meta = new(MintSwap)
 	case TxCollectibleTransfer:
 		t.Meta = new(CollectibleTransfer)
 	case TxTokenSwap:
@@ -86,6 +88,8 @@ func (t *Tx) MarshalJSON() ([]byte, error) {
 		t.Type = TxBridgeDeposit
 	case BridgeWithdrawal, *BridgeWithdrawal:
 		t.Type = TxBridgeWithdrawal
+	case MintSwap, *MintSwap:
+		t.Type = TxMintSwap
 	case CollectibleTransfer, *CollectibleTransfer:
 		t.Type = TxCollectibleTransfer
 	case TokenSwap, *TokenSwap:
